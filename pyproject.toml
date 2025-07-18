@@ -1,0 +1,16 @@
+[project]
+name = "trip-planner-mcp"
+version = "0.1.0"
+description = "Trip planning MCP server"
+dependencies = [
+    "fastmcp>=0.1.0",
+    "httpx>=0.24.0",
+]
+requires-python = ">=3.10"
+
+[project.scripts]
+trip-planner = "trip_planner_mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
